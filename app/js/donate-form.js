@@ -48,7 +48,7 @@
 					name: {
 						required: true,
 						lettersonly: true,
-						 minlength: 3
+						 minlength: 5
 					},
 					email: {
 						required: true,
