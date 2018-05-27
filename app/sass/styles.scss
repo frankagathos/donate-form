@@ -1,0 +1,274 @@
+
+$primary-color:#979797;
+$top-box-color:#4b4b4b;
+$bar-text-color:#f16a44;
+$border-color:#e0e0e0;
+/*animation time must be relevant to jquery animation*/
+$baranimation-time: 3s;
+$main-font:'Lato', sans-serif;
+
+/*reset browser specific padding and margins*/
+* {
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+html{
+  font-family: $main-font;
+}
+body{
+	padding-left: 30vw;
+  padding-right: 30vw;
+	font-size: 1.2rem;
+  color: $primary-color;
+}
+.main-container {       
+    padding: 3rem;  
+}
+
+/*top box section - - - - - -- - - - - - - - ----------*/
+.topheader-arrowbox{
+  text-align: center;
+  background-color: $top-box-color;
+  color:white;
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.topheader-arrowbox:after {
+  top: 100%;
+  left:80%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  /*for all major browsers*/
+  -webkit-transition: width 2s; /* For Safari 3.1 to 6.0 */
+    -moz-animation:    width 2s;
+    -o-animation:     width 2s;
+    -ms-transition:    width 2s;
+    animation:         width 2s;
+    transition: width 2s;
+}
+.topheader-arrowbox.changed:after {
+  top: 100%;
+  left:50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+.topheader-arrowbox:after { 
+  border-top-color: $top-box-color;
+  border-width: 10px;
+  margin-left: -10px;
+}
+#days{
+  color:$bar-text-color;
+  font-weight:  bold;
+}
+/*progress bar -----*/
+#progressbar {
+  border-top: 2px $border-color solid; 
+  border-left: 2px $border-color solid; 
+  border-right: 2px $border-color solid; 
+  
+}
+#progbarinner {
+   background-color: $bar-text-color;
+   width: 60%; /* Adjust with JavaScript */
+   height: 1.5rem;
+  
+   -webkit-transition: width $baranimation-time; /* For Safari 3.1 to 6.0 */
+    -moz-animation:    width $baranimation-time;
+    -o-animation:     width $baranimation-time;
+    -ms-transition:    width $baranimation-time;
+    animation:         width $baranimation-time;
+    transition: width $baranimation-time;
+}
+form{
+  color:red;
+  font-size: 1rem;
+}
+#donate-from{
+  position: relative;
+}
+input, select, textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    
+    resize: vertical;
+    font-size: 1rem;
+}
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;  
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label {
+  
+  width: 6em;
+  margin-right: .5em;
+  padding-top: 1.5em;
+}
+
+.second-container{
+	padding: 3rem;
+	border: 2px $border-color solid; 
+}
+
+.formlabel{
+  color: red;
+}
+
+.smalltext{
+  font-size: 1rem;
+  color:#8e959c;
+}
+.smalltext2{
+  font-size: 1.3rem;
+  color:#2eaeda;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 50%;   
+}
+/* Clear floats after the columns */
+.row{
+  height: 200px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#left{
+  padding-right: 1rem;    
+}
+#right{
+  padding-top: 1.5rem;
+  padding-left: 1rem;  
+}
+.ui-datepicker-calendar {
+    display: none;
+    }
+
+
+/*responsive section ----------------------------------------------*/
+
+@media (min-width: 1281px) {
+  
+ body{
+  padding-left: 30vw;
+  padding-right: 30vw;
+  font-size: 1.2rem;
+  color: $primary-color;
+}
+  
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  body{
+  padding-left: 30vw;
+  padding-right: 30vw;
+  font-size: 1.2rem;
+  color: $primary-color;
+}
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+ body{
+  padding-left: 25vw;
+  padding-right: 25vw;
+  font-size: 1.2rem;
+  color: $primary-color;
+}
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+ body{
+  padding-left: 20vw;
+  padding-right: 20vw;
+  font-size: 1.2rem;
+  color: $primary-color;
+}
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  body{
+   padding-left: 5vw;
+  padding-right: 5vw;
+
+  font-size: 1.2rem;
+  color: $primary-color;
+}
+  .main-container {       
+    padding: 0px;  
+}
+.second-container{
+  padding: 0px;
+  border: 2px $border-color solid; 
+}
+  
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+ body{
+   padding-left: 1vw;
+  padding-right: 1vw;
+
+
+  font-size: 1.2rem;
+  color: $primary-color;
+}
+  .main-container {       
+    padding: 2px;  
+}
+.second-container{
+  padding: 0px;
+  border: 2px $border-color solid; 
+}
+}
+@media (min-width: 0px) and (max-width: 320px) {
+  
+ body{
+   padding-left: 1vw;
+  padding-right: 1vw;
+
+
+  font-size: 1.2rem;
+  color: $primary-color;
+}
+  .main-container {       
+    padding: 2px;  
+}
+.second-container{
+  padding: 0px;
+  border: 2px $border-color solid; 
+}
+}

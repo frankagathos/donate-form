@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Donation-form</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+	<!-- styles for this app-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!--dependencies for this app--> 
+	<script src="js/jquery.min.js"></script>	
+	<script src="js/jquery-ui.min.js"></script>   	
+</head>
+<body>
+	
+
+	<div class="main-container">
+		<div class="topheader-arrowbox" style="display: none">		
+			<h3 id="text3" style="display: none" >$<span id="money">167</span> still needed for this project</h3>
+			<h3 id="text4" style="display: none" >Goal reached!Thanks for helping us achieving our goal!</h3>
+		</div>
+		<div id="progressbar" style="display: none" >
+			       <div id="progbarinner"></div>
+	    </div>
+				<div class="second-container">
+						
+						
+						<div>		
+							<p id="text1" style="display: none"><span id="days">Only 3 days left</span> to fund this project.</p>
+							<br>
+							<p id="text2" style="display: none">Join the <span id="donors">42</span> other donors who have already supported this project.Every dollar helps.</p>
+						</div>
+					  <form action="" id="donate-form" style="display: none">
+					  		<!-- name -->
+					  		<div>
+					  		<label for="name" class="formlabel"></label>	
+						    <input type="text" id="name" name="name" placeholder="John Doe">
+					  		</div>
+					  		
+							<!-- email -->
+							<div>
+						    <label for="email" class="formlabel"></label>
+						    <input type="email" id="email" name="email" placeholder="john@example.com">	
+						    </div>
+							<!-- phone number-->
+							<div>
+						    <label for="phonenumber" class="formlabel"></label>
+						    <input type="text" id="phonenumber" name="phonenumber" placeholder="+44 207 123 4567">
+						   </div>
+							<!-- credit card number -->
+							<div>
+						    <label for="creditcardnumber" class="formlabel"></label>			   
+							<input type="text" id="creditcardnumber" name="creditcardnumber" placeholder="4242 4242 4242 4242">	
+							 <div class="smalltext">			
+							Long number on the front of your card
+							</div>
+							</div>
+							<!--credit card behind-->
+							<div>
+							<label for="creditcardbehind" class="formlabel"></label>
+							<input  type="text" id="creditcardbehind" name="creditcardbehind" placeholder="123">
+							<div class="smalltext">
+							The 3 digits to the right of the signature strip located on the back of your card
+							</div>
+							</div>
+							<!--exp date-->
+							<div>
+							<label for="date" class="formlabel"></label>
+							<input class="date-picker" id="date" name="date" placeholder="10/17">				 				
+							</div>						
+							<!--message-->
+							<div>	
+						    <label for="message" class="formlabel"></label>
+						    <textarea type="text" id="message" name="message" placeholder="Hello there, I'd like to donate you some money" style="height:200px"></textarea>
+						    </div>
+						   	<!--donation-->
+						   	<div class="row">
+									  <div class="column" >
+									    	<div id="left">
+													<label for="donation" class="formlabel"></label>
+													
+													<input type="text" id="donation" name="donation" placeholder="$50">
+										    </div>
+										    <div class="smalltext2">
+										     <em>Why give $50?</em>
+							
+							               </div>
+									  </div>
+									  <div class="column">
+											<div id="right">
+											    <input id="submit" type="submit" value="Give now">
+											</div>
+									  </div>
+							</div>						    
+					  </form>
+			  </div>
+	</div>
+ <!-- scripts- - - - - - - - - - - - - - - - - - - - -->
+ <script src="js/jquery.validate.min.js"></script>
+ <script src="js/additional-methods.js"></script>
+ <!-- custom scripts for this app- - - - - - - - - - - - - - - - - - - - --> 
+ <script src="js/donate-form.js"></script>
+ <script src="js/intro.js"></script>	
+	
+</body>
+</html>
