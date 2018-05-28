@@ -140,9 +140,15 @@ label {
   color:#8e959c;
 }
 .smalltext2{
+  position: relative;
   font-size: 1.3rem;
   color:#2eaeda;
+  :hover{
+    cursor: pointer;
+    
+  }
 }
+
 
 /* Create two equal columns that floats next to each other */
 .column {

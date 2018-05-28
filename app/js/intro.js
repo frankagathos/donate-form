@@ -1,7 +1,7 @@
 window.onload = function() {
     
 
-	// starting animation section
+	// starting animation 
 		
 		setTimeout(function () {
 					                  $("#text1").fadeIn( 1000 );
@@ -35,5 +35,16 @@ window.onload = function() {
             });
         });
 
+    //js for the donate text   
+     $( function() {
+    $(".smalltext2").hover(function(){
+        $(this).css("background-color", "yellow");
+        }, function(){
+        $(this).css("background-color", "white");
+    });
+    $( ".smalltext2" ).click(function() {
+  alert( "A donation of $50 is the average donation which will help us........." );
+});
+});
 
 };

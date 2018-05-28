@@ -1,6 +1,6 @@
 	$( function() {
 
-
+			
 			// include this for all browsers ------------------------------------------------------------------
 			var matched, browser;
 
@@ -40,7 +40,7 @@
 
 
 			//validation starts here -----------------------------------------------------------------------------
-
+				
 			 var counter=0;			
 			 var validator = $( "#donate-form" ).validate( {
 				errorClass: "ui-state-error",
@@ -129,10 +129,10 @@
 					                setTimeout(function () {
 					        $("#progbarinner").css("background-color","#f16a44");   
 					        $("#progbarinner").css("width", "60%");				        
-					          }, 4000); //will call the function after 1.5 secs.;
+					          }, 4000); //will call the function after 4 secs.;
 					                setTimeout(function () {
 					        $("#donate-form").show( 1000);
-					          }, 5000); //will call the function after 3 secs.;
+					          }, 5000); 
 
 								}
 				else{
@@ -157,11 +157,12 @@
                 //money=parseInt(money);
                 
                 
+
                
-             console.log(moneyleft); 
-             console.log(counter); 
-             console.log(donation);
-             console.log(donors);    
+             //console.log(moneyleft); 
+             //console.log(counter); 
+             //console.log(donation);
+             //console.log(donors);    
                 //alert("Congratulations you just made a donation!");
         
                 //validator.destroy();
