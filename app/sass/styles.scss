@@ -157,7 +157,7 @@ label {
 }
 /* Clear floats after the columns */
 .row{
-  height: 200px;
+  
 }
 .row:after {
     content: "";
@@ -169,7 +169,7 @@ label {
   padding-right: 1rem;    
 }
 #right{
-  padding-top: 1.5rem;
+  padding-top: 1.3rem;
   padding-left: 1rem;  
 }
 .ui-datepicker-calendar {
@@ -178,22 +178,13 @@ label {
 
 
 /*-------------------------------------------responsive section ----------------------------------------------*/
-@media (min-width: 1281px) {
-  
- body{
-  padding-left: 30vw;
-  padding-right: 30vw;
-  font-size: 1.2rem;
-  color: $primary-color;
-}
-  
-}
+
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   
   body{
-  padding-left: 30vw;
-  padding-right: 30vw;
+  padding-left: 25vw;
+  padding-right: 25vw;
   font-size: 1.2rem;
   color: $primary-color;
 }
@@ -203,8 +194,8 @@ label {
 
 @media (min-width: 768px) and (max-width: 1024px) {
  body{
-  padding-left: 25vw;
-  padding-right: 25vw;
+  padding-left: 20vw;
+  padding-right: 20vw;
   font-size: 1.2rem;
   color: $primary-color;
 }
@@ -214,8 +205,8 @@ label {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   
  body{
-  padding-left: 20vw;
-  padding-right: 20vw;
+  padding-left: 15vw;
+  padding-right: 15vw;
   font-size: 1.2rem;
   color: $primary-color;
 }
@@ -225,18 +216,18 @@ label {
 @media (min-width: 481px) and (max-width: 767px) {
   
   body{
-   padding-left: 5vw;
-  padding-right: 5vw;
+   padding-left: 10vw;
+  padding-right: 10vw;
 
   font-size: 1.2rem;
   color: $primary-color;
 }
   .main-container {       
-    padding: 0px;  
+    padding: 6px;  
 }
 .second-container{
-  padding: 0px;
-  border: 2px $border-color solid; 
+  padding: 6px;
+  border: 1px $border-color solid; 
 }
   
 }
@@ -252,11 +243,11 @@ label {
   color: $primary-color;
 }
   .main-container {       
-    padding: 2px;  
+    padding: 4px;  
 }
 .second-container{
-  padding: 0px;
-  border: 2px $border-color solid; 
+  padding: 4px;
+  border: 1px $border-color solid; 
 }
 }
 @media (min-width: 0px) and (max-width: 320px) {
@@ -273,7 +264,7 @@ label {
     padding: 2px;  
 }
 .second-container{
-  padding: 0px;
-  border: 2px $border-color solid; 
+  padding: 2px;
+  border: 1px $border-color solid; 
 }
 }
