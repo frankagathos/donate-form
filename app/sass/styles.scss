@@ -156,9 +156,7 @@ label {
     width: 50%;   
 }
 /* Clear floats after the columns */
-.row{
-  
-}
+
 .row:after {
     content: "";
     display: table;
@@ -175,7 +173,8 @@ label {
 .ui-datepicker-calendar {
     display: none;
     }
-
+ /*-----hide the date picker today button ----------------------------------------------*/   
+button.ui-datepicker-current { display: none; }
 
 /*-------------------------------------------responsive section ----------------------------------------------*/
 

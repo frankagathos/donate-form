@@ -153,6 +153,10 @@ label {
 .ui-datepicker-calendar {
   display: none; }
 
+/*-----hide the date picker today button ----------------------------------------------*/
+button.ui-datepicker-current {
+  display: none; }
+
 /*-------------------------------------------responsive section ----------------------------------------------*/
 @media (min-width: 1025px) and (max-width: 1280px) {
   body {
